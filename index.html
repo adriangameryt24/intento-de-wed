@@ -111,6 +111,69 @@
         <p>© 2025 ZONA SPORT | Todos los derechos reservados a Adrian Mendoza </p>
     </footer>
 
+    <!-- Modal para mostrar imagen ampliada -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <h3 id="modalTitle"></h3>
+            <p id="modalPrice"></p>
+            <button class="buy-button" onclick="comprar()">COMPRAR</button>
+            <button class="close-button" onclick="cerrarModal()">CERRAR</button>
+        </div>
+    </div>
+
+    <script>
+        // Función para abrir el modal
+        function abrirModal(imagen, titulo, precio) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalPrice = document.getElementById('modalPrice');
+            
+            modal.style.display = 'block';
+            modalImg.src = imagen;
+            modalTitle.textContent = titulo;
+            modalPrice.textContent = precio;
+        }
+
+        // Función para cerrar el modal
+        function cerrarModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Función para comprar
+        function comprar() {
+            const titulo = document.getElementById('modalTitle').textContent;
+            alert('¡Gracias por tu interés en ' + titulo + '! Te contactaremos pronto.');
+            cerrarModal();
+        }
+
+        // Cerrar modal al hacer clic en la X
+        document.querySelector('.close').onclick = cerrarModal;
+
+        // Cerrar modal al hacer clic fuera de él
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target == modal) {
+                cerrarModal();
+            }
+        }
+
+        // Agregar eventos de clic a todas las imágenes del carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            const carouselImages = document.querySelectorAll('.carousel-item img');
+            carouselImages.forEach(function(img) {
+                img.addEventListener('click', function() {
+                    const titulo = this.nextElementSibling.textContent.split('\n')[0];
+                    const precio = this.nextElementSibling.innerHTML.includes('Precio:') ? 
+                        this.nextElementSibling.textContent.split('\n')[1] : 'Precio: Consultar';
+                    abrirModal(this.src, titulo, precio);
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
