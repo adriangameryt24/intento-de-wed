@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="styles.css">
-    <title>ZONA SPORT - Bera</title> 
+    <title>ZONA SPORT - Bera</title>
+    <link rel="icon" href="img/icon_1.png" type="image/png">
 </head>
     <body>
-    <h1>Bera Catálogo</h1>
+    <h1>BERA</h1>
+    <h2>CATÁLOGO DE MOTOCICLETAS</h2>
 
 <ul class="bar">
     <li>
@@ -29,6 +32,50 @@
        <a href="cascos.html">Cascos</a>
     </li>
 </ul>
+
+<div class="marca-info">
+    <h2>Sobre Bera</h2>
+    <p>Bera es una marca reconocida por fabricar motocicletas robustas y confiables, ideales para uso urbano y aventuras off-road. Ofrece excelente relación calidad-precio con tecnología moderna y diseño atractivo.</p>
+</div>
+
+<h2>Modelos Disponibles</h2>
+<div class="modelos-grid">
+    <div class="modelo-card">
+        <img src="img/bera.jpeg" alt="Bera Super DT">
+        <h3>Super DT</h3>
+        <div class="specs">
+            <p><strong>Motor:</strong> 200cc, 4 tiempos</p>
+            <p><strong>Potencia:</strong> 18 HP</p>
+            <p><strong>Transmisión:</strong> 5 velocidades</p>
+            <p><strong>Peso:</strong> 145 kg</p>
+        </div>
+        <p class="precio">Precio: $1,790</p>
+        <button class="buy-button" onclick="contactar('Bera Super DT')">CONSULTAR</button>
+    </div>
+    
+    <div class="modelo-card">
+        <img src="img/bera.jpeg" alt="Bera DT 150">
+        <h3>DT 150</h3>
+        <div class="specs">
+            <p><strong>Motor:</strong> 150cc, 4 tiempos</p>
+            <p><strong>Potencia:</strong> 14 HP</p>
+            <p><strong>Transmisión:</strong> 5 velocidades</p>
+            <p><strong>Peso:</strong> 135 kg</p>
+        </div>
+        <p class="precio">Precio: $1,490</p>
+        <button class="buy-button" onclick="contactar('Bera DT 150')">CONSULTAR</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 ZONA SPORT | Todos los derechos reservados a Adrian Mendoza</p>
+</footer>
+
+<script>
+function contactar(modelo) {
+    alert('¡Gracias por tu interés en ' + modelo + '! Te contactaremos pronto para más información.');
+}
+</script>
 
 </body>
 </html>

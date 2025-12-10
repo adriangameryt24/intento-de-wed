@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>ZONA SPORT - Shineray</title>
+    <link rel="icon" href="img/icon_1.png" type="image/png">
+</head>
+<body>
+    <h1>SHINERAY</h1>
+    <h2>CATÁLOGO DE MOTOCICLETAS</h2>
+
+    <ul class="bar">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="Bera.html">Bera</a></li>
+        <li><a href="suzuky.html">Suzuki</a></li>
+        <li><a href="shineray.html" class="active">Shineray</a></li>
+        <li><a href="cascos.html">Cascos</a></li>
+    </ul>
+
+    <div class="marca-info">
+        <h2>Sobre Shineray</h2>
+        <p>Shineray es una marca china que ha ganado reconocimiento por ofrecer motocicletas de excelente calidad a precios competitivos. Sus modelos combinan diseño moderno con tecnología confiable.</p>
+    </div>
+
+    <h2>Modelos Disponibles</h2>
+    <div class="modelos-grid">
+        <div class="modelo-card">
+            <img src="img/thornado.jpeg" alt="Shineray Thornado">
+            <h3>Thornado</h3>
+            <div class="specs">
+                <p><strong>Motor:</strong> 200cc, 4 tiempos</p>
+                <p><strong>Potencia:</strong> 20 HP</p>
+                <p><strong>Transmisión:</strong> 5 velocidades</p>
+                <p><strong>Peso:</strong> 150 kg</p>
+            </div>
+            <p class="precio">Precio: Consultar</p>
+            <button class="buy-button" onclick="contactar('Shineray Thornado')">CONSULTAR</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 ZONA SPORT | Todos los derechos reservados a Adrian Mendoza</p>
+    </footer>
+
+    <script>
+    function contactar(modelo) {
+        alert('¡Gracias por tu interés en ' + modelo + '! Te contactaremos pronto para más información.');
+    }
+    </script>
+</body>
+</html>
