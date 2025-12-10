@@ -21,6 +21,16 @@ p {
   line-height: 1.6;
 }
 
+p:has(+ .marcas-motos) {
+  color: #00BFFF;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+
 h1 {
   color: #FFFFFF;
   font-family: 'swipe', 'Orbitron', sans-serif;
@@ -503,4 +513,48 @@ ol li, ul li {
 /* Hacer las imágenes del carousel clickeables */
 .carousel-item img {
   cursor: pointer;
+}/* 
+========================================
+   LISTA DE MARCAS DE MOTOS
+   ======================================== */
+
+.marcas-motos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px 0;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.marcas-motos li {
+  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+  color: #FFFFFF;
+  padding: 15px 20px;
+  border: 2px solid #00BFFF;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+  cursor: pointer;
+}
+
+.marcas-motos li:hover {
+  background: linear-gradient(135deg, #FF4444 0%, #DC143C 100%);
+  border-color: #00FFFF;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  transform: translateY(-5px) scale(1.05);
+  color: #FFFFFF;
+}
+
+.marcas-motos li:nth-child(odd) {
+  border-color: #C0C0C0;
+}
+
+.marcas-motos li:nth-child(odd):hover {
+  border-color: #00FFFF;
 }
