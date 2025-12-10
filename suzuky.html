@@ -7,7 +7,8 @@
     <title>ZONA SPORT - Suzuki</title> 
 </head>
 <body>
-    <h1>Suzuki Catálogo</h1>
+    <h1>SUZUKI</h1>
+    <h2>CATÁLOGO DE MOTOCICLETAS</h2>
 
 <ul class="bar">
     <li>
@@ -29,6 +30,46 @@
        <a href="cascos.html">Cascos</a>
     </li>
 </ul>
+
+<div class="marca-info">
+    <h2>Sobre Suzuki</h2>
+    <p>Suzuki Motor Corporation es una empresa japonesa fundada en 1909, reconocida mundialmente por la fabricación de motocicletas de alta calidad, rendimiento excepcional y tecnología innovadora.</p>
+</div>
+
+<h2>Modelos Disponibles</h2>
+<div class="modelos-grid">
+    <div class="modelo-card">
+        <img src="img/suzuki.jpeg" alt="Suzuki Gixxer GSX 250 SF">
+        <h3>Gixxer GSX 250 SF</h3>
+        <div class="specs">
+            <p><strong>Motor:</strong> 249cc, 4 tiempos</p>
+            <p><strong>Potencia:</strong> 26.5 HP</p>
+            <p><strong>Transmisión:</strong> 6 velocidades</p>
+            <p><strong>Peso:</strong> 158 kg</p>
+        </div>
+        <p class="precio">Precio: $2,499</p>
+        <button class="buy-button" onclick="contactar('Suzuki Gixxer GSX 250 SF')">CONSULTAR</button>
+    </div>
+    
+    <div class="modelo-card">
+        <img src="img/suzuki.jpeg" alt="Suzuki GSX-R150">
+        <h3>GSX-R150</h3>
+        <div class="specs">
+            <p><strong>Motor:</strong> 147cc, 4 tiempos</p>
+            <p><strong>Potencia:</strong> 19.2 HP</p>
+            <p><strong>Transmisión:</strong> 6 velocidades</p>
+            <p><strong>Peso:</strong> 134 kg</p>
+        </div>
+        <p class="precio">Precio: $1,899</p>
+        <button class="buy-button" onclick="contactar('Suzuki GSX-R150')">CONSULTAR</button>
+    </div>
+</div>
+
+<script>
+function contactar(modelo) {
+    alert('¡Gracias por tu interés en ' + modelo + '! Te contactaremos pronto para más información.');
+}
+</script>
 
 </body>
 </html>
