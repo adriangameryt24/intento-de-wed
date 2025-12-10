@@ -4,7 +4,7 @@
 
 body {
   background-color: #000000;
-  background-image: url('img/fondo.jpg');
+  background-image: url('img/fondo_2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -391,12 +391,4 @@ ol, ul {
 ol li, ul li {
   margin: 10px 0;
   text-transform: capitalize;
-}
-.box{
-  width: 1920px;
-  height: 1080px;
-  margin: auto;
-  background-image: url("https://www.pxfuel.com/es/desktop-wallpaper-zmgqt");
-
-
 }
