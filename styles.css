@@ -29,20 +29,15 @@ img {
    ======================================== */
 
 body {
-  background-color: #000000;
-  background-image: url('img/fondo_2.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #333333;
   margin: 0;
   padding: 0;
   font-family: 'Rajdhani', sans-serif;
 }
 
 p {
-  color: #C0C0C0;
+  color: #555555;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -58,14 +53,13 @@ p:has(+ .marcas-motos) {
 }
 
 h1 {
-  color: #FFFFFF;
+  color: #1E90FF;
   font-family: 'swipe', 'Orbitron', sans-serif;
   font-size: 56px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
-  text-shadow: 0 0 8px #00BFFF, 0 0 15px #1E90FF;
-  -webkit-text-stroke: 2px #000000;
+  text-shadow: 0 0 8px rgba(30, 144, 255, 0.3);
   margin: 0;
 }
 
@@ -90,7 +84,7 @@ h1 {
 }
 
 h2 {
-  color: #00BFFF;
+  color: #1E90FF;
   font-family: 'Audiowide', sans-serif;
   font-size: 32px;
   text-transform: uppercase;
@@ -102,25 +96,25 @@ h2 {
    ======================================== */
 
 .bar {
-  background: linear-gradient(90deg, #333333 0%, #1a1a1a 100%);
+  background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%);
   width: 100%;
   height: 50px;
   display: flex;
   list-style: none;
   padding: 0;
-  border-top: 2px solid #00BFFF;
-  border-bottom: 2px solid #00BFFF;
-  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+  border-top: 2px solid #1E90FF;
+  border-bottom: 2px solid #1E90FF;
+  box-shadow: 0 2px 10px rgba(30, 144, 255, 0.2);
 }
 
 .bar li {
   height: 100%;
   width: 100px;
-  border-right: 1px solid #00BFFF;
+  border-right: 1px solid #1E90FF;
 }
 
 .bar li a {
-  color: #FFFFFF;
+  color: #333333;
   width: 100%;
   height: 100%;
   display: flex;
@@ -135,14 +129,14 @@ h2 {
 }
 
 .bar li a:hover {
-  background-color: #FF4444;
+  background-color: #1E90FF;
   color: #FFFFFF;
-  text-shadow: 0 0 10px #00FFFF;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 .bar li a.active {
-  background-color: #00BFFF;
-  color: #000000;
+  background-color: #1E90FF;
+  color: #FFFFFF;
   font-weight: bold;
 }
 
@@ -295,11 +289,11 @@ form input[type="submit"]:hover {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(180deg, #000000 0%, #1a1a00 100%);
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 50px 0;
   margin: 0;
-  border-top: 2px solid #ffd700;
-  border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #1E90FF;
+  border-bottom: 2px solid #1E90FF;
 }
 
 .carousel-track {
@@ -323,21 +317,21 @@ form input[type="submit"]:hover {
   height: 240px;
   object-fit: cover;
   border-radius: 15px;
-  border: 3px solid #00BFFF;
-  box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+  border: 3px solid #1E90FF;
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3);
   transition: all 0.3s ease;
 }
 
 .carousel-item img:hover {
-  border-color: #FF4444;
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+  border-color: #0066CC;
+  box-shadow: 0 6px 25px rgba(30, 144, 255, 0.5);
   transform: scale(1.05);
 }
 
 .carousel-item h3 {
   font-size: 18px;
   margin: 20px 0;
-  color: #FFFFFF;
+  color: #333333;
   font-weight: bold;
   line-height: 1.4;
   font-family: 'Rajdhani', sans-serif;
@@ -396,12 +390,12 @@ table tr:hover {
    ======================================== */
 
 footer {
-  color: #ffd700;
+  color: #333333;
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
-  border-top: 2px solid #ffd700;
-  background: linear-gradient(180deg, #000000 0%, #1a1a00 100%);
+  border-top: 2px solid #1E90FF;
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
   font-family: 'Rajdhani', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -554,18 +548,18 @@ ol li, ul li {
 }
 
 .marcas-motos li {
-  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
-  border: 2px solid #00BFFF;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px solid #1E90FF;
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+  box-shadow: 0 2px 10px rgba(30, 144, 255, 0.2);
   overflow: hidden;
 }
 
 .marcas-motos li a {
   display: block;
-  color: #FFFFFF;
+  color: #333333;
   padding: 15px 20px;
   text-decoration: none;
   font-family: 'Russo One', sans-serif;
@@ -578,9 +572,9 @@ ol li, ul li {
 }
 
 .marcas-motos li:hover {
-  background: linear-gradient(135deg, #FF4444 0%, #DC143C 100%);
-  border-color: #00FFFF;
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  background: linear-gradient(135deg, #1E90FF 0%, #0066CC 100%);
+  border-color: #0066CC;
+  box-shadow: 0 4px 20px rgba(30, 144, 255, 0.4);
   transform: translateY(-5px) scale(1.05);
 }
 
