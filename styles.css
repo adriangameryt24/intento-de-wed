@@ -186,8 +186,8 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
-  color: #000000;
+  background: linear-gradient(135deg, #1E90FF 0%, #0066CC 100%);
+  color: #FFFFFF;
   padding: 12px 30px;
   border: none;
   border-radius: 5px;
@@ -200,8 +200,8 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background: linear-gradient(135deg, #ffaa00 0%, #ff8c00 100%);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(135deg, #0066CC 0%, #004499 100%);
+  box-shadow: 0 0 20px rgba(30, 144, 255, 0.6);
   transform: scale(1.05);
 }
 
@@ -211,7 +211,7 @@ form input[type="submit"]:hover {
 
 .search {
   display: flex;
-  outline: 2px solid #ffd700;
+  outline: 2px solid #1E90FF;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -221,14 +221,14 @@ form input[type="submit"]:hover {
   border: 0;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #0a0a00;
-  color: #ffd700;
+  background-color: #FFFFFF;
+  color: #333333;
   font-family: 'Rajdhani', sans-serif;
 }
 
 .search > input:focus {
   outline: none;
-  background-color: #141400;
+  background-color: #f8f9fa;
 }
 
 .search > button {
@@ -236,16 +236,16 @@ form input[type="submit"]:hover {
   border: 0;
   cursor: pointer;
   font-size: 1rem;
-  background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
-  color: #000000;
+  background: linear-gradient(135deg, #1E90FF 0%, #0066CC 100%);
+  color: #FFFFFF;
   font-family: 'Russo One', sans-serif;
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
 
 .search > button:hover {
-  background: linear-gradient(135deg, #ffaa00 0%, #ff8c00 100%);
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  background: linear-gradient(135deg, #0066CC 0%, #004499 100%);
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
 }
 
 /* ========================================
@@ -356,33 +356,33 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  background-color: #0a0a00;
-  border: 2px solid #ffd700;
+  background-color: #FFFFFF;
+  border: 2px solid #1E90FF;
 }
 
 table td {
   padding: 12px;
   text-align: center;
-  border: 1px solid #ffd700;
-  color: #ffd700;
+  border: 1px solid #1E90FF;
+  color: #333333;
   font-family: 'Rajdhani', sans-serif;
 }
 
 table tr:first-child td {
-  background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+  background: linear-gradient(135deg, #1E90FF 0%, #0066CC 100%);
   font-weight: bold;
-  color: #000000;
+  color: #FFFFFF;
   font-family: 'Russo One', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 table tr:nth-child(even) {
-  background-color: #141400;
+  background-color: #f8f9fa;
 }
 
 table tr:hover {
-  background-color: #1a1a00;
+  background-color: #e9ecef;
 }
 
 /* ========================================
@@ -407,13 +407,13 @@ footer {
 
 hr {
   border: none;
-  border-top: 2px solid #ffd700;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  border-top: 2px solid #1E90FF;
+  box-shadow: 0 2px 5px rgba(30, 144, 255, 0.3);
   margin: 20px 0;
 }
 
 ol, ul {
-  color: #ffd700;
+  color: #333333;
   font-family: 'Rajdhani', sans-serif;
   font-size: 18px;
 }
