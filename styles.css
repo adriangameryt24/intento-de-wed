@@ -74,13 +74,13 @@ h1 {
   width: 120px;
   height: 120px;
   object-fit: contain;
-  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
   transition: transform 0.3s ease;
 }
 
 .logo:hover {
   transform: scale(1.1);
-  filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.8));
+  filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.8));
 }
 
 h2 {
@@ -147,13 +147,13 @@ h2 {
 form {
   padding: 20px 0;
   max-width: 500px;
-  border-bottom: 2px solid #ffd700;
+  border-bottom: 2px solid #000dff;
 }
 
 form label {
   display: block;
   margin: 15px 0 5px 0;
-  color: #ffaa00;
+  color: #0eb7e5;
   font-weight: bold;
   font-family: 'Rajdhani', sans-serif;
   font-size: 18px;
@@ -166,9 +166,9 @@ form textarea {
   max-width: 400px;
   padding: 10px;
   margin-bottom: 15px;
-  border: 2px solid #ffd700;
+  border: 2px solid #00e5ff;
   background-color: #0a0a00;
-  color: #ffd700;
+  color: #0055ff;
   border-radius: 5px;
   font-family: 'Rajdhani', sans-serif;
 }
@@ -177,7 +177,7 @@ form input[type="text"]:focus,
 form input[type="email"]:focus,
 form textarea:focus {
   outline: none;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 15px rgba(4, 0, 255, 0.5);
 }
 
 form textarea {
