@@ -27,85 +27,113 @@
 <body>
 <div class="contenedor">
     <h1>ZONA SPORT</h1>
-
-    <h2> INICIO</h2>
-
-
+    <h2>DISTRIBUIDORA DE MOTOCICLETAS</h2>
 
     <ul class="bar">
-        <li>
-            <a href="index.html" class="active">Inicio</a>
-        </li>
-        <li>
-            <a href="catalogo.html">Catálogo</a>
-        </li>
-        <li>
-            <a href="contacto.html">Contacto</a>
-        </li>
-    </ul>
-
-
-    <p>MODELOS DE MOTOS</p>
-    
-    <ul class="marcas-motos">
-        <li><a href="suzuky.html">Suzuki</a></li>
-        <li><a href="yamaha.html">Yamaha</a></li>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
         <li><a href="Bera.html">Bera</a></li>
-        <li><a href="tuko.html">Tuko</a></li>
-        <li><a href="bmw.html">BMW</a></li>
-        <li><a href="shineray.html">Shineray</a></li>
-        <li><a href="daytona.html">Daytona</a></li>
+        <li><a href="suzuky.html">Suzuki</a></li>
+        <li><a href="cascos.html">Cascos</a></li>
     </ul>
 
-    <hr>
-    <h2>Fotos de los Modelos</h2>
+    <div class="marca-info">
+        <h2>Sobre ZONA SPORT</h2>
+        <p>ZONA SPORT es tu distribuidor de confianza especializado en motocicletas de alta calidad y alto cilindraje. Ofrecemos las mejores marcas del mercado con tecnología de punta, diseño excepcional y el respaldo de fabricantes reconocidos mundialmente. Nuestro compromiso es brindarte la mejor experiencia en motocicletas deportivas, urbanas y de aventura.</p>
+    </div>
 
-    <div class="carousel-container">
-        <div class="carousel-track">
-            <div class="carousel-item">
-                <img alt="shineray thornado" src="img/thornado.jpeg">
-                <h3>Shineray Thornado<br>Precio: Consultar</h3>
+
+    <h2>Nuestras Marcas Disponibles</h2>
+    <div class="modelos-grid">
+        <div class="modelo-card">
+            <img src="img/suzuki.jpeg" alt="Suzuki">
+            <h3>Suzuki</h3>
+            <div class="specs">
+                <p><strong>Especialidad:</strong> Deportivas y Naked</p>
+                <p><strong>Modelos:</strong> Gixxer GSX, GSX-R</p>
+                <p><strong>Desde:</strong> $1,899</p>
             </div>
-            <div class="carousel-item">
-                <img alt="suzuki" src="img/suzuki.jpeg">
-                <h3>Suzuki Gixxer GSX 250 SF<br>Precio: $2,499</h3>
+            <button class="buy-button" onclick="window.location.href='suzuky.html'">VER MODELOS</button>
+        </div>
+        
+        <div class="modelo-card">
+            <img src="img/YZF-R3.jpg" alt="Yamaha">
+            <h3>Yamaha</h3>
+            <div class="specs">
+                <p><strong>Especialidad:</strong> Deportivas Premium</p>
+                <p><strong>Modelos:</strong> YZF-R3, MT-03</p>
+                <p><strong>Desde:</strong> Consultar</p>
             </div>
-            <div class="carousel-item">
-                <img alt="bera" src="img/Super DT 200cc.jpeg">
-                <h3>Bera Super DT 200cc<br>Precio: $1,790</h3>
+            <button class="buy-button" onclick="window.location.href='yamaha.html'">VER MODELOS</button>
+        </div>
+        
+        <div class="modelo-card">
+            <img src="img/Super DT 200cc.jpeg" alt="Bera">
+            <h3>Bera</h3>
+            <div class="specs">
+                <p><strong>Especialidad:</strong> Trail y Urbanas</p>
+                <p><strong>Modelos:</strong> Super DT, SBR</p>
+                <p><strong>Desde:</strong> $1,490</p>
             </div>
-            <div class="carousel-item">
-                <img alt="Daytona" src="img/daytona.jpeg">
-                <h3>Daytona Wing Evo 2<br>Precio: $2,119</h3>
+            <button class="buy-button" onclick="window.location.href='Bera.html'">VER MODELOS</button>
+        </div>
+        
+        <div class="modelo-card">
+            <img src="img/tuko.jpeg" alt="Tuko">
+            <h3>Tuko</h3>
+            <div class="specs">
+                <p><strong>Especialidad:</strong> Deportivas 4V</p>
+                <p><strong>Modelos:</strong> TK Storm 250</p>
+                <p><strong>Desde:</strong> $2,799</p>
             </div>
-            <div class="carousel-item">
-                <img alt="Tuko" src="img/tuko.jpeg">
-                <h3>Tuko TK Storm 250 4V<br>Precio: $2,799</h3>
+            <button class="buy-button" onclick="window.location.href='tuko.html'">VER MODELOS</button>
+        </div>
+        
+        <div class="modelo-card">
+            <img src="img/G 310 R.jpg" alt="BMW">
+            <h3>BMW</h3>
+            <div class="specs">
+                <p><strong>Especialidad:</strong> Premium Alemanas</p>
+                <p><strong>Modelos:</strong> G 310 R</p>
+                <p><strong>Desde:</strong> Consultar</p>
             </div>
-            <!-- Duplicamos las imágenes para efecto continuo -->
-            <div class="carousel-item">
-                <img alt="shineray thornado" src="img/thornado.jpeg">
-                <h3>Shineray Thornado<br>Precio: Consultar</h3>
+            <button class="buy-button" onclick="window.location.href='bmw.html'">VER MODELOS</button>
+        </div>
+        
+        <div class="modelo-card">
+            <img src="img/thornado.jpeg" alt="Shineray">
+            <h3>Shineray</h3>
+            <div class="specs">
+                <p><strong>Especialidad:</strong> Deportivas Accesibles</p>
+                <p><strong>Modelos:</strong> Thornado</p>
+                <p><strong>Desde:</strong> Consultar</p>
             </div>
-            <div class="carousel-item">
-                <img alt="suzuki" src="img/suzuki.jpeg">
-                <h3>Suzuki Gixxer GSX 250 SF<br>Precio: $2,499</h3>
+            <button class="buy-button" onclick="window.location.href='shineray.html'">VER MODELOS</button>
+        </div>
+        
+        <div class="modelo-card">
+            <img src="img/daytona.jpeg" alt="Daytona">
+            <h3>Daytona</h3>
+            <div class="specs">
+                <p><strong>Especialidad:</strong> Deportivas Wing</p>
+                <p><strong>Modelos:</strong> Wing Evo 2</p>
+                <p><strong>Desde:</strong> $2,119</p>
             </div>
-            <div class="carousel-item">
-                <img alt="bera" src="img/Super DT 200cc.jpeg">
-                <h3>Bera Super DT 200cc<br>Precio: $1,790</h3>
-            </div>
-            <div class="carousel-item">
-                <img alt="Daytona" src="img/daytona.jpeg">
-                <h3>Daytona Wing Evo 2<br>Precio: $2,119</h3>
-            </div>
-            <div class="carousel-item">
-                <img alt="Tuko" src="img/tuko.jpeg">
-                <h3>Tuko TK Storm 250 4V<br>Precio: $2,799</h3>
-            </div>
+            <button class="buy-button" onclick="window.location.href='daytona.html'">VER MODELOS</button>
         </div>
     </div>
-    <hr>
+
+    <div class="marca-info">
+        <h2>¿Por qué elegir ZONA SPORT?</h2>
+        <p>✓ <strong>Garantía oficial</strong> en todos nuestros productos<br>
+        ✓ <strong>Servicio técnico especializado</strong> con técnicos certificados<br>
+        ✓ <strong>Repuestos originales</strong> disponibles<br>
+        ✓ <strong>Financiamiento</strong> con las mejores condiciones<br>
+        ✓ <strong>Asesoría personalizada</strong> para encontrar tu moto ideal</p>
+    </div>
+
+
 
     <footer>
         <p>© 2025 ZONA SPORT | Todos los derechos reservados a Adrian Mendoza </p>
@@ -150,7 +178,9 @@
         }
 
         // Cerrar modal al hacer clic en la X
-        document.querySelector('.close').onclick = cerrarModal;
+        if(document.querySelector('.close')) {
+            document.querySelector('.close').onclick = cerrarModal;
+        }
 
         // Cerrar modal al hacer clic fuera de él
         window.onclick = function(event) {
@@ -160,14 +190,13 @@
             }
         }
 
-        // Agregar eventos de clic a todas las imágenes del carousel
+        // Agregar eventos de clic a las imágenes de las tarjetas
         document.addEventListener('DOMContentLoaded', function() {
-            const carouselImages = document.querySelectorAll('.carousel-item img');
-            carouselImages.forEach(function(img) {
+            const modeloImages = document.querySelectorAll('.modelo-card img');
+            modeloImages.forEach(function(img) {
                 img.addEventListener('click', function() {
-                    const titulo = this.nextElementSibling.textContent.split('\n')[0];
-                    const precio = this.nextElementSibling.innerHTML.includes('Precio:') ? 
-                        this.nextElementSibling.textContent.split('\n')[1] : 'Precio: Consultar';
+                    const titulo = this.nextElementSibling.textContent;
+                    const precio = this.parentElement.querySelector('.specs p:last-child').textContent;
                     abrirModal(this.src, titulo, precio);
                 });
             });
