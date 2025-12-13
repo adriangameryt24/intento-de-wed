@@ -1,4 +1,30 @@
 /* ========================================
+   RESET Y ESTILOS UNIVERSALES
+   ======================================== */
+
+/* Ajuste universal para que todo responda bien */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Las imágenes se adaptan automáticamente */
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Contenedor adaptable */
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* ========================================
    ESTILOS GENERALES
    ======================================== */
 
@@ -916,5 +942,117 @@ ol li, ul li {
   .carousel-container {
     max-width: 1200px;
     margin: 0 auto;
+  }
+}/* =
+=======================================
+   PÁGINA DE CONTACTO
+   ======================================== */
+
+.contact-info {
+  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+  border: 2px solid #00BFFF;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.contact-info h2 {
+  color: #00BFFF;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info p {
+  color: #C0C0C0;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 191, 255, 0.2);
+}
+
+.contact-info p:last-child {
+  border-bottom: none;
+}
+
+.contact-info strong {
+  color: #00BFFF;
+  display: inline-block;
+  width: 100px;
+}
+
+/* Mejorar formularios */
+form h2 {
+  color: #00BFFF;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+form select {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #00BFFF;
+  background-color: #0a0a00;
+  color: #C0C0C0;
+  border-radius: 5px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+}
+
+form select:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+}
+
+form select option {
+  background-color: #1a1a1a;
+  color: #C0C0C0;
+}
+
+/* Responsive para contacto */
+@media screen and (max-width: 768px) {
+  .contact-info {
+    padding: 20px;
+    margin: 15px 0;
+  }
+  
+  .contact-info h2 {
+    font-size: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+  }
+  
+  .contact-info strong {
+    width: 80px;
+    font-size: 14px;
+  }
+  
+  form {
+    padding: 15px 0;
+  }
+  
+  form h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-info {
+    padding: 15px;
+  }
+  
+  .contact-info strong {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info p {
+    font-size: 13px;
+    padding: 10px 0;
   }
 }
