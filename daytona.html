@@ -1,66 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Cabeceras de seguridad HTTP -->
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline';">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>ZONA SPORT - Daytona</title>
-    <link rel="icon" href="img/icon_1.png" type="image/png">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff"><meta http-equiv="X-Frame-Options" content="SAMEORIGIN"><meta name="referrer" content="strict-origin-when-cross-origin"><meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&family=Audiowide&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="styles.css">
+    <title>ZONA SPORT - Daytona</title><link rel="icon" href="img/icon_1.png" type="image/png">
 </head>
-<body>
-<div class="contenedor">
-    <h1>DAYTONA</h1>
-    <h2>CATÁLOGO DE MOTOCICLETAS</h2>
-
-    <ul class="bar">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="Bera.html">Bera</a></li>
-        <li><a href="suzuky.html">Suzuki</a></li>
-        <li><a href="daytona.html" class="active">Daytona</a></li>
-        <li><a href="cascos.html">Cascos</a></li>
-    </ul>
-
-    <div class="marca-info">
-        <h2>Sobre Daytona</h2>
-        <p>Daytona es reconocida por fabricar motocicletas deportivas de alta calidad con diseño aerodinámico y tecnología de punta. Perfectas para quienes buscan rendimiento excepcional y estilo único.</p>
-    </div>
-
-    <h2>Modelos Disponibles</h2>
-    <div class="modelos-grid">
-        <div class="modelo-card">
+<body><div class="contenedor">
+    <header class="site-header"><img src="img/icon_1.png" alt="Logo" class="logo"><div><h1>ZONA SPORT</h1><p class="subtitulo">Distribuidora Oficial de Motocicletas</p></div></header>
+    <ul class="bar"><li><a href="index.html">Inicio</a></li><li><a href="catalogo.html">Catálogo</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="daytona.html" class="active">Daytona</a></li><li><a href="suzuky.html">Suzuki</a></li><li><a href="cascos.html">Cascos</a></li></ul>
+    <section class="catalogo-hero">
+        <div class="catalogo-hero-content">
+            <img src="img/logo daytona.png" alt="Daytona" style="height:60px;margin:0 auto 15px;display:block;filter:brightness(0) invert(1);">
+            <h2>Daytona - Diseño Aerodinámico</h2>
+            <p>Motocicletas deportivas con diseño agresivo y tecnología de alto rendimiento</p>
+            <div class="hero-btns"><a href="contacto.html" class="btn-primary">Solicitar Cotización</a><a href="catalogo.html" class="btn-secondary">Ver Catálogo</a></div>
+        </div>
+    </section>
+    <div class="marca-info"><h2>Sobre Daytona</h2><p>Daytona se distingue por fabricar motocicletas deportivas con diseño aerodinámico de alto impacto visual y tecnología de punta. Perfectas para quienes buscan rendimiento excepcional con un estilo único y agresivo.</p></div>
+    <h2 class="section-title">Modelos Disponibles</h2>
+    <div class="catalogo-grid">
+        <div class="catalogo-card">
+            <div class="card-badge-precio">$2,119</div>
             <img src="img/daytona.jpeg" alt="Daytona Wing Evo 2">
+            <img src="img/logo daytona.png" alt="Logo Daytona" class="marca-logo">
             <h3>Wing Evo 2</h3>
-            <div class="specs">
-                <p><strong>Motor:</strong> 200cc, 4 tiempos</p>
-                <p><strong>Potencia:</strong> 22 HP</p>
-                <p><strong>Transmisión:</strong> 6 velocidades</p>
-                <p><strong>Peso:</strong> 155 kg</p>
-            </div>
-            <p class="precio">Precio: $2,119</p>
-            <button class="buy-button" onclick="contactar('Daytona Wing Evo 2')">CONSULTAR</button>
+            <div class="card-specs-mini"><span>⚙️ 200cc</span><span>💪 22 HP</span><span>🔄 6 vel</span><span>⚖️ 155 kg</span></div>
+            <div class="card-acciones"><a href="contacto.html" class="btn-ver">Consultar</a><a href="contacto.html" class="btn-comprar">Comprar</a></div>
         </div>
     </div>
-
-    <footer>
-        <p>© 2025 ZONA SPORT | Todos los derechos reservados a Adrian Mendoza</p>
-    </footer>
-
-    <script>
-    function contactar(modelo) {
-        alert('¡Gracias por tu interés en ' + modelo + '! Te contactaremos pronto para más información.');
-    }
-    </script>
-</div>
-</body>
-</html>
+    <section class="cta-banner"><div class="cta-content"><h2>¿Te interesa una Daytona?</h2><p>Contáctanos para precios, disponibilidad y financiamiento</p><a href="contacto.html" class="btn-primary">Hablar con un Asesor</a></div></section>
+    <footer class="site-footer"><div class="footer-grid"><div class="footer-col"><h4>ZONA SPORT</h4><p>Tu distribuidor oficial de motocicletas.</p></div><div class="footer-col"><h4>Navegación</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="catalogo.html">Catálogo</a></li><li><a href="contacto.html">Contacto</a></li></ul></div><div class="footer-col"><h4>Marcas</h4><ul><li><a href="suzuky.html">Suzuki</a></li><li><a href="yamaha.html">Yamaha</a></li><li><a href="Bera.html">Bera</a></li><li><a href="tuko.html">Tuko</a></li><li><a href="bmw.html">BMW</a></li><li><a href="shineray.html">Shineray</a></li><li><a href="daytona.html">Daytona</a></li></ul></div><div class="footer-col"><h4>Contacto</h4><p>📧 adriangamery10@gmail.com</p><p>🕐 Lun - Sáb: 9AM - 6PM</p></div></div><div class="footer-bottom"><p>© 2025 ZONA SPORT | Todos los derechos reservados a Adrian Mendoza</p></div></footer>
+</div></body></html>
