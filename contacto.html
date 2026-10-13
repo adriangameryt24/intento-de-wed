@@ -41,7 +41,13 @@
     <p><strong>Horarios:</strong> Lunes a Sábado 9:00 AM - 6:00 PM</p>
 </div>
 
-<form>
+<form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    <!-- Web3Forms Access Key - Reemplaza con tu clave real -->
+    <input type="hidden" name="access_key" value="cc5c7f7e-b87d-457e-9d20-cdf47b3cdd6a">
+    <input type="hidden" name="subject" value="Nuevo mensaje desde ZONA SPORT">
+    <input type="hidden" name="from_name" value="ZONA SPORT Web">
+    <input type="hidden" name="redirect" value="https://intento-de-wed.vercel.app/contacto.html?enviado=true">
+
     <h2>Envíanos un Mensaje</h2>
     
     <label for="name">Nombre Completo:</label>
@@ -51,7 +57,7 @@
     <input type="email" id="email" name="email" placeholder="tu@email.com" required>
     
     <label for="phone">Teléfono:</label>
-    <input type="text" id="phone" name="phone" placeholder="Tu número de teléfono">
+    <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono">
     
     <label for="interest">Interés en:</label>
     <select id="interest" name="interest">
@@ -71,8 +77,29 @@
     <label for="message">Mensaje:</label>
     <textarea id="message" name="message" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
     
-    <input type="submit" value="ENVIAR MENSAJE">
+    <input type="submit" value="ENVIAR MENSAJE" id="submitBtn">
+
+    <!-- Mensaje de éxito -->
+    <div id="successMsg" style="display:none; margin-top:15px; padding:15px; background:#d1fae5; border:2px solid #10b981; border-radius:8px; color:#065f46; font-family:'Rajdhani',sans-serif; font-size:16px;">
+        ✅ ¡Mensaje enviado! Te responderemos pronto a <strong>adriangamery10@gmail.com</strong>.
+    </div>
 </form>
+
+<script>
+    // Mostrar mensaje de éxito si fue redirigido
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('enviado') === 'true') {
+        document.getElementById('successMsg').style.display = 'block';
+        document.getElementById('contactForm').style.display = 'none';
+    }
+
+    // Deshabilitar botón al enviar
+    document.getElementById('contactForm').addEventListener('submit', function() {
+        const btn = document.getElementById('submitBtn');
+        btn.value = 'ENVIANDO...';
+        btn.disabled = true;
+    });
+</script>
 
 <footer>
     <p>© 2025 ZONA SPORT | Todos los derechos reservados a Adrian Mendoza</p>
