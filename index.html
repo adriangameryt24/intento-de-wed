@@ -51,9 +51,17 @@
 
 <body>
 <div class="contenedor">
-    <h1>ZONA SPORT</h1>
-    <h2>DISTRIBUIDORA DE MOTOCICLETAS</h2>
 
+    <!-- HEADER -->
+    <header class="site-header">
+        <img src="img/icon_1.png" alt="ZONA SPORT Logo" class="logo">
+        <div>
+            <h1>ZONA SPORT</h1>
+            <p class="subtitulo">Distribuidora Oficial de Motocicletas</p>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN -->
     <ul class="bar">
         <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="catalogo.html">Catálogo</a></li>
@@ -63,108 +71,182 @@
         <li><a href="cascos.html">Cascos</a></li>
     </ul>
 
-    <div class="marca-info">
-        <h2>Sobre ZONA SPORT</h2>
-        <p>ZONA SPORT es tu distribuidor de confianza especializado en motocicletas de alta calidad y alto cilindraje. Ofrecemos las mejores marcas del mercado con tecnología de punta, diseño excepcional y el respaldo de fabricantes reconocidos mundialmente. Nuestro compromiso es brindarte la mejor experiencia en motocicletas deportivas, urbanas y de aventura.</p>
-    </div>
+    <!-- HERO BANNER -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Tu moto ideal te espera</h2>
+            <p>Las mejores marcas del mercado con garantía oficial, financiamiento y servicio técnico especializado.</p>
+            <div class="hero-btns">
+                <a href="catalogo.html" class="btn-primary">Ver Catálogo</a>
+                <a href="contacto.html" class="btn-secondary">Contáctanos</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stat-item">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Marcas</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">20+</span>
+            <span class="stat-label">Modelos</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Garantía</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">5★</span>
+            <span class="stat-label">Servicio</span>
+        </div>
+    </section>
 
-    <h2>Nuestras Marcas Disponibles</h2>
-    <div class="modelos-grid">
-        <div class="modelo-card">
-            <img src="img/suzuki.jpeg" alt="Suzuki">
-            <h3>Suzuki</h3>
-            <div class="specs">
-                <p><strong>Especialidad:</strong> Deportivas y Naked</p>
-                <p><strong>Modelos:</strong> Gixxer GSX, GSX-R</p>
-                <p><strong>Desde:</strong> $1,899</p>
+    <!-- MARCAS -->
+    <section>
+        <h2 class="section-title">Nuestras Marcas</h2>
+        <div class="modelos-grid">
+            <div class="modelo-card">
+                <img src="img/suzuki.jpeg" alt="Suzuki">
+                <h3>Suzuki</h3>
+                <div class="specs">
+                    <p><strong>Especialidad:</strong> Deportivas y Naked</p>
+                    <p><strong>Modelos:</strong> Gixxer GSX, GSX-R</p>
+                    <p><strong>Desde:</strong> $1,899</p>
+                </div>
+                <a href="suzuky.html" class="buy-button">Ver Modelos</a>
             </div>
-            <button class="buy-button" onclick="window.location.href='suzuky.html'">VER MODELOS</button>
-        </div>
-        
-        <div class="modelo-card">
-            <img src="img/YZF-R3.jpg" alt="Yamaha">
-            <h3>Yamaha</h3>
-            <div class="specs">
-                <p><strong>Especialidad:</strong> Deportivas Premium</p>
-                <p><strong>Modelos:</strong> YZF-R3, MT-03</p>
-                <p><strong>Desde:</strong> Consultar</p>
+            <div class="modelo-card">
+                <img src="img/YZF-R3.jpg" alt="Yamaha">
+                <h3>Yamaha</h3>
+                <div class="specs">
+                    <p><strong>Especialidad:</strong> Deportivas Premium</p>
+                    <p><strong>Modelos:</strong> YZF-R3, MT-03</p>
+                    <p><strong>Desde:</strong> Consultar</p>
+                </div>
+                <a href="yamaha.html" class="buy-button">Ver Modelos</a>
             </div>
-            <button class="buy-button" onclick="window.location.href='yamaha.html'">VER MODELOS</button>
-        </div>
-        
-        <div class="modelo-card">
-            <img src="img/Super DT 200cc.jpeg" alt="Bera">
-            <h3>Bera</h3>
-            <div class="specs">
-                <p><strong>Especialidad:</strong> Trail y Urbanas</p>
-                <p><strong>Modelos:</strong> Super DT, SBR</p>
-                <p><strong>Desde:</strong> $1,490</p>
+            <div class="modelo-card">
+                <img src="img/Super DT 200cc.jpeg" alt="Bera">
+                <h3>Bera</h3>
+                <div class="specs">
+                    <p><strong>Especialidad:</strong> Trail y Urbanas</p>
+                    <p><strong>Modelos:</strong> Super DT, SBR</p>
+                    <p><strong>Desde:</strong> $1,490</p>
+                </div>
+                <a href="Bera.html" class="buy-button">Ver Modelos</a>
             </div>
-            <button class="buy-button" onclick="window.location.href='Bera.html'">VER MODELOS</button>
-        </div>
-        
-        <div class="modelo-card">
-            <img src="img/tuko.jpeg" alt="Tuko">
-            <h3>Tuko</h3>
-            <div class="specs">
-                <p><strong>Especialidad:</strong> Deportivas 4V</p>
-                <p><strong>Modelos:</strong> TK Storm 250</p>
-                <p><strong>Desde:</strong> $2,799</p>
+            <div class="modelo-card">
+                <img src="img/tuko.jpeg" alt="Tuko">
+                <h3>Tuko</h3>
+                <div class="specs">
+                    <p><strong>Especialidad:</strong> Deportivas 4V</p>
+                    <p><strong>Modelos:</strong> TK Storm 250</p>
+                    <p><strong>Desde:</strong> $2,799</p>
+                </div>
+                <a href="tuko.html" class="buy-button">Ver Modelos</a>
             </div>
-            <button class="buy-button" onclick="window.location.href='tuko.html'">VER MODELOS</button>
-        </div>
-        
-        <div class="modelo-card">
-            <img src="img/G 310 R.jpg" alt="BMW">
-            <h3>BMW</h3>
-            <div class="specs">
-                <p><strong>Especialidad:</strong> Premium Alemanas</p>
-                <p><strong>Modelos:</strong> G 310 R</p>
-                <p><strong>Desde:</strong> Consultar</p>
+            <div class="modelo-card">
+                <img src="img/G 310 R.jpg" alt="BMW">
+                <h3>BMW</h3>
+                <div class="specs">
+                    <p><strong>Especialidad:</strong> Premium Alemanas</p>
+                    <p><strong>Modelos:</strong> G 310 R</p>
+                    <p><strong>Desde:</strong> Consultar</p>
+                </div>
+                <a href="bmw.html" class="buy-button">Ver Modelos</a>
             </div>
-            <button class="buy-button" onclick="window.location.href='bmw.html'">VER MODELOS</button>
-        </div>
-        
-        <div class="modelo-card">
-            <img src="img/thornado.jpeg" alt="Shineray">
-            <h3>Shineray</h3>
-            <div class="specs">
-                <p><strong>Especialidad:</strong> Deportivas Accesibles</p>
-                <p><strong>Modelos:</strong> Thornado</p>
-                <p><strong>Desde:</strong> Consultar</p>
+            <div class="modelo-card">
+                <img src="img/thornado.jpeg" alt="Shineray">
+                <h3>Shineray</h3>
+                <div class="specs">
+                    <p><strong>Especialidad:</strong> Deportivas Accesibles</p>
+                    <p><strong>Modelos:</strong> Thornado</p>
+                    <p><strong>Desde:</strong> Consultar</p>
+                </div>
+                <a href="shineray.html" class="buy-button">Ver Modelos</a>
             </div>
-            <button class="buy-button" onclick="window.location.href='shineray.html'">VER MODELOS</button>
-        </div>
-        
-        <div class="modelo-card">
-            <img src="img/daytona.jpeg" alt="Daytona">
-            <h3>Daytona</h3>
-            <div class="specs">
-                <p><strong>Especialidad:</strong> Deportivas Wing</p>
-                <p><strong>Modelos:</strong> Wing Evo 2</p>
-                <p><strong>Desde:</strong> $2,119</p>
+            <div class="modelo-card">
+                <img src="img/daytona.jpeg" alt="Daytona">
+                <h3>Daytona</h3>
+                <div class="specs">
+                    <p><strong>Especialidad:</strong> Deportivas Wing</p>
+                    <p><strong>Modelos:</strong> Wing Evo 2</p>
+                    <p><strong>Desde:</strong> $2,119</p>
+                </div>
+                <a href="daytona.html" class="buy-button">Ver Modelos</a>
             </div>
-            <button class="buy-button" onclick="window.location.href='daytona.html'">VER MODELOS</button>
         </div>
-    </div>
+    </section>
 
-    <div class="marca-info">
-        <h2>¿Por qué elegir ZONA SPORT?</h2>
-        <p>✓ <strong>Garantía oficial</strong> en todos nuestros productos<br>
-        ✓ <strong>Servicio técnico especializado</strong> con técnicos certificados<br>
-        ✓ <strong>Repuestos originales</strong> disponibles<br>
-        ✓ <strong>Financiamiento</strong> con las mejores condiciones<br>
-        ✓ <strong>Asesoría personalizada</strong> para encontrar tu moto ideal</p>
-    </div>
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="porque">
+        <h2 class="section-title">¿Por qué elegir ZONA SPORT?</h2>
+        <div class="porque-grid">
+            <div class="porque-item">
+                <span class="porque-icon">🏆</span>
+                <h3>Garantía Oficial</h3>
+                <p>Todos nuestros productos cuentan con garantía oficial del fabricante.</p>
+            </div>
+            <div class="porque-item">
+                <span class="porque-icon">🔧</span>
+                <h3>Servicio Técnico</h3>
+                <p>Técnicos certificados para el mantenimiento de tu motocicleta.</p>
+            </div>
+            <div class="porque-item">
+                <span class="porque-icon">💳</span>
+                <h3>Financiamiento</h3>
+                <p>Las mejores condiciones de financiamiento para que te lleves tu moto hoy.</p>
+            </div>
+            <div class="porque-item">
+                <span class="porque-icon">🛒</span>
+                <h3>Repuestos Originales</h3>
+                <p>Amplio stock de repuestos originales para todas las marcas.</p>
+            </div>
+        </div>
+    </section>
 
-
-
-    <footer>
-        <p>© 2025 ZONA SPORT | Todos los derechos reservados a Adrian Mendoza </p>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>ZONA SPORT</h4>
+                <p>Tu distribuidor oficial de motocicletas deportivas, urbanas y de aventura.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="cascos.html">Cascos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Marcas</h4>
+                <ul>
+                    <li><a href="suzuky.html">Suzuki</a></li>
+                    <li><a href="yamaha.html">Yamaha</a></li>
+                    <li><a href="Bera.html">Bera</a></li>
+                    <li><a href="tuko.html">Tuko</a></li>
+                    <li><a href="bmw.html">BMW</a></li>
+                    <li><a href="shineray.html">Shineray</a></li>
+                    <li><a href="daytona.html">Daytona</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📧 adriangamery10@gmail.com</p>
+                <p>🕐 Lun - Sáb: 9AM - 6PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 ZONA SPORT | Todos los derechos reservados a Adrian Mendoza</p>
+        </div>
     </footer>
 
-    <!-- Modal para mostrar imagen ampliada -->
+    <!-- Modal -->
     <div id="imageModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -177,52 +259,21 @@
     </div>
 
     <script>
-        // Función para abrir el modal
-        function abrirModal(imagen, titulo, precio) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            const modalTitle = document.getElementById('modalTitle');
-            const modalPrice = document.getElementById('modalPrice');
-            
-            modal.style.display = 'block';
-            modalImg.src = imagen;
-            modalTitle.textContent = titulo;
-            modalPrice.textContent = precio;
-        }
-
-        // Función para cerrar el modal
-        function cerrarModal() {
-            document.getElementById('imageModal').style.display = 'none';
-        }
-
-        // Función para comprar
+        function cerrarModal() { document.getElementById('imageModal').style.display = 'none'; }
         function comprar() {
             const titulo = document.getElementById('modalTitle').textContent;
             alert('¡Gracias por tu interés en ' + titulo + '! Te contactaremos pronto.');
             cerrarModal();
         }
-
-        // Cerrar modal al hacer clic en la X
-        if(document.querySelector('.close')) {
-            document.querySelector('.close').onclick = cerrarModal;
-        }
-
-        // Cerrar modal al hacer clic fuera de él
-        window.onclick = function(event) {
-            const modal = document.getElementById('imageModal');
-            if (event.target == modal) {
-                cerrarModal();
-            }
-        }
-
-        // Agregar eventos de clic a las imágenes de las tarjetas
-        document.addEventListener('DOMContentLoaded', function() {
-            const modeloImages = document.querySelectorAll('.modelo-card img');
-            modeloImages.forEach(function(img) {
+        if(document.querySelector('.close')) document.querySelector('.close').onclick = cerrarModal;
+        window.onclick = e => { if(e.target == document.getElementById('imageModal')) cerrarModal(); }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.modelo-card img').forEach(img => {
                 img.addEventListener('click', function() {
-                    const titulo = this.nextElementSibling.textContent;
-                    const precio = this.parentElement.querySelector('.specs p:last-child').textContent;
-                    abrirModal(this.src, titulo, precio);
+                    document.getElementById('imageModal').style.display = 'block';
+                    document.getElementById('modalImage').src = this.src;
+                    document.getElementById('modalTitle').textContent = this.nextElementSibling.textContent;
+                    document.getElementById('modalPrice').textContent = this.closest('.modelo-card').querySelector('.specs p:last-child').textContent;
                 });
             });
         });
