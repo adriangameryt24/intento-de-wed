@@ -44,8 +44,8 @@
     </li>
     </ul>
 
-    <h1>Tablas</h1>
-    <table border="2">
+    <h2>Modelos y Precios</h2>
+    <table>
 
         <tr>
             <td>MARCAS</td>
@@ -93,15 +93,14 @@
 
     <form>
         <div class="search">
-            <input type="text" placeholder="Search products" />
+            <input type="text" placeholder="Buscar modelos..." aria-label="Buscar modelos" />
             <button type="submit">Buscar</button>
         </div>
-
-        <div class="inline-flex radio-block">
-            <span>Busca tu Moto</span>
-            <div class="inline-flex align-center">
-                <input type="radio" name="location" value="Tu ubicación" id="your_location" />
-                <label for="your_location">Tu Ubicación</label>
+        <div class="radio-block">
+            <span>Filtrar por:</span>
+            <div class="inline-flex">
+                <input type="radio" name="location" value="local" id="local" />
+                <label for="local">Tu Ubicación</label>
             </div>
         </div>
     </form>
